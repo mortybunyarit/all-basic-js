@@ -9,7 +9,7 @@
 8. หาก user ป้อนคำอื่นที่ไม่ใช้วันเข้ามา จะต้องแสดงข้อความ "Invalid input. Please enter a valid day of the week."
 */
 
-let usersDate;
+let usersDate = 'friday';
 
 let message;
 
@@ -34,6 +34,7 @@ switch (usersDate) {
     break;
   case "sunday":
     message = "It's Sunday!";
+    break;
   default:
     message = "Invalid input. Please enter a valid day of the week.";
 }

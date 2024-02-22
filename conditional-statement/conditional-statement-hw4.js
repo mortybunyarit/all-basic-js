@@ -15,5 +15,7 @@ let nationality = "Taiwan";
 let age = "20";
 
 if (nationality === "Thailand" && age >= 18) {
-  console.log(`${name}มีสิทธิเลือกตั้งในประเทศไทย`);
-} else console.log(`${name} ไม่มีสิทธิเลือกตั้งในประเทศไทย`);
+  console.log(`${name} มีสิทธิเลือกตั้งในประเทศไทย`);
+} else {
+  console.log(`${name} ไม่มีสิทธิเลือกตั้งในประเทศไทย`);
+}
