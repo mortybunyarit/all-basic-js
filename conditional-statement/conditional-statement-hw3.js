@@ -10,24 +10,39 @@
 เมื่อโปรแกรมทำงานจะแสดงข้อความว่า 'คุณได้คะแนนสอบ 72 คะแนน ดังนั้นคุณได้เกรด B'
 */
 
+// let score = 55; // test คะแนนจากตัวแปรนี้ได้เลย
+// let grade = "";
+
+// if (score >= 90) {
+//   return (grade = "A+");
+// } else if (score >= 80) {
+//   return (grade = "A");
+// } else if (score >= 70) {
+//   return (grade = "B");
+// } else if (score >= 60) {
+//   return (grade = "C");
+// } else if (score >= 50) {
+//   return (grade = "D");
+// } else if (score < 50) {
+//   return (grade = "F");
+// }
+
 let score = 55; // test คะแนนจากตัวแปรนี้ได้เลย
-let grade = 'B';
+let grade = "";
 // ให้เขียน code ต่อเพื่อให้โปรแกรมทำงานได้ครบถ้วนตาม requirement
 
 if (score >= 90) {
-  return (grade = "A+");
+  grade = "A+";
 } else if (score >= 80) {
-  return (grade = "A");
+  grade = "A";
 } else if (score >= 70) {
-  console.log(`คุณได้คะแนนสอบ ${score} คะแนน ดังนั้นคุณได้เกรด ${grade} `);
-  return (grade = "B");
+  grade = "B";
 } else if (score >= 60) {
-  return (grade = "C");
+  grade = "C";
 } else if (score >= 50) {
-  console.log(`คุณได้คะแนนสอบ ${score} คะแนน ดังนั้นคุณได้เกรด ${grade} `);
-  return (grade = "D");
-} else if (score < 50) {
-  return (grade = "F");
+  grade = "D";
+} else {
+  grade = "F";
 }
 
 /* สิ่งที่อยากให้แก้
@@ -37,3 +52,4 @@ if (score >= 90) {
 
 2. ทำไงเกรดจะไม่เป็น undefined
 */
+console.log(`คุณได้คะแนนสอบ ${score} คะแนน ดังนั้นคุณได้เกรด ${grade} `);
