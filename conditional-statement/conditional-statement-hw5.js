@@ -11,3 +11,5 @@ if (isGameOver) {
 let isGameOver = false;
 
 // หากทำถูกต้อง จะเห็นประโยค 'You can still play it!!'
+
+isGameOver ? console.log("Game Over") : console.log("You can still play it!!");

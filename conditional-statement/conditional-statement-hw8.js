@@ -8,3 +8,34 @@
 7. หากวันที่ user ป้อนเข้ามาเป็น "sunday" จะต้องแสดงข้อความ "It's Sunday! Time to recharge"
 8. หาก user ป้อนคำอื่นที่ไม่ใช้วันเข้ามา จะต้องแสดงข้อความ "Invalid input. Please enter a valid day of the week."
 */
+
+let usersDate;
+
+let message;
+
+switch (usersDate) {
+  case "monday":
+    message = "It's Monday!.";
+    break;
+  case "tuesday":
+    message = "It's Tuesday!.";
+    break;
+  case "wednesday":
+    message = "It's Wednesday!";
+    break;
+  case "thursday":
+    message = "It's Thursday!";
+    break;
+  case "friday":
+    message = "It's Friday!";
+    break;
+  case "saturday":
+    message = "It's Saturday!";
+    break;
+  case "sunday":
+    message = "It's Sunday!";
+  default:
+    message = "Invalid input. Please enter a valid day of the week.";
+}
+
+console.log(message);

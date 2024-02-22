@@ -11,5 +11,21 @@
 */
 
 let score = 72;
-
+let grade;
 // ให้เขียน code ต่อเพื่อให้โปรแกรมทำงานได้ครบถ้วนตาม requirement
+
+if (score >= 90) {
+  return (grade = "A+");
+} else if (score >= 80) {
+  return (grade = "A");
+} else if (score >= 70) {
+  return (grade = "B");
+} else if (score >= 60) {
+  return (grade = "C");
+} else if (score >= 50) {
+  return (grade = "D");
+} else if (score < 50) {
+  return (grade = "F");
+}
+
+console.log(`คุณได้คะแนนสอบ ${score} คะแนน ดังนั้นคุณได้เกรด ${grade} `);

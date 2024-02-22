@@ -10,6 +10,22 @@ if (isOver65 || isUnder12) {
 
 */
 
+// let isOver65 = false;
+// let isUnder12 = false;
+// let message = null;
+
+// message =
+//   isOver65 || isUnder12
+//     ? console.log("You get discount")
+//     : console.log("You must pay in full price!");
+
+// console.log(message);
+
 let isOver65 = false;
 let isUnder12 = false;
 let message = null;
+
+message =
+  isOver65 || isUnder12 ? "You get discount" : "You must pay in full price!";
+
+console.log(message);

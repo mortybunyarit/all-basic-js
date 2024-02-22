@@ -13,6 +13,12 @@ let intersectionA = "red";
 if (intersectionA === "yellow") {
   intersectionA = "red";
   console.log("ไฟจราจรได้เปลี่ยนเป็นสีแดง");
+} else if (intersectionA === "red") {
+  intersectionA = "green";
+  console.log("ไฟจราจรได้เปลี่ยนเป็นสีเขียว");
+} else if (intersectionA === "green") {
+  intersectionA = "yellow";
+  console.log("ไฟจราจรได้เปลี่ยนเป็นสีเหลือง");
 }
 
 // ให้เขียน code ต่อเพื่อให้โปรแกรมทำงานได้ครบถ้วนตาม requirement

@@ -12,3 +12,7 @@ let isSad = true;
 let isHungry = false;
 
 // หากทำถูกต้อง จะเห็นประโยค 'Eat Something'
+
+isSad || isHungry
+  ? console.log("Eat Something")
+  : console.log("Just go to work");

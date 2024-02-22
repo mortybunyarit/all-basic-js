@@ -10,6 +10,10 @@
 กรณีที่เข้าเงื่อนไขทั้งสองข้อ ให้แสดงข้อความ 'ชื่อ มีสิทธิ์เลือกตั้งในประเทศไทย'
 */
 
-let name = 'Shane';
-let nationality = 'Taiwan';
-let age = '20';
+let name = "Shane";
+let nationality = "Taiwan";
+let age = "20";
+
+if (nationality === "Thailand" && age >= 18) {
+  console.log(`${name}มีสิทธิเลือกตั้งในประเทศไทย`);
+} else console.log(`${name} ไม่มีสิทธิเลือกตั้งในประเทศไทย`);
