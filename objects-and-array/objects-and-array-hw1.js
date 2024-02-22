@@ -20,3 +20,14 @@
 7. ให้ทำการลบข้อมูลจำนวนหน้าออกจาก bookInfo
 8. ให้ทำการ console.log object bookInfo อีกครั้ง ว่าเหลือ key-value pair ทั้งหมดกี่คู่ อะไรบ้าง
 */
+let bookInfo = {
+  title: "Building a Second Brain",
+  author: "Tiago Forte",
+  //   numberOfPage: 315,
+  rating: 4.7,
+};
+
+console.log(bookInfo); //มี key-value pair ทั้งหมดมี3คู่ title: 'Building a Second Brain',// author: 'Tiago Forte',// numberOfPage: 315
+console.log(
+  `This book is ${bookInfo.title} by ${bookInfo.author} come with ${bookInfo.rating} rating`
+);

@@ -9,3 +9,15 @@
 9. ให้เปลี่ยนค่าใน array จาก 'orange' เป็น 'avocado' จากนั้น console.log เพื่อดูความเปลี่ยนแปลง
 10. ให้ console.log เพื่อแสดงจำนวนสมาชิกใน array นี้ ว่ามีสมาชิกทั้งหมดกี่ตัว
 */
+
+const fruits = ["orange", "apple"];
+
+fruits[0] = "avocado";
+
+fruits.push("banana");
+// fruits.unshift("orange");
+fruits.unshift("peach");
+fruits.pop();
+fruits.shift();
+
+console.log(fruits);
