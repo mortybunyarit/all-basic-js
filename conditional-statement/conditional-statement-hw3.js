@@ -53,3 +53,13 @@ if (score >= 90) {
 2. ทำไงเกรดจะไม่เป็น undefined
 */
 console.log(`คุณได้คะแนนสอบ ${score} คะแนน ดังนั้นคุณได้เกรด ${grade} `);
+
+// ทวนเรื่อง return ว่าหลัง return โค้ดยังทำงานต่อไหม
+
+// let number = 1;
+
+// if (number === 1) {
+//   console.log(number);
+//   return console.log('มาจาก return') 
+//   console.log('อันนี้จะเห็นไหม???')
+// } 

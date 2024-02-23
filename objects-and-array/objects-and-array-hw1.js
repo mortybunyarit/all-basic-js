@@ -6,19 +6,19 @@
 
 2. ให้ console.log object bookInfo ออกทางหน้าจอ และดูว่ามี key-value pair ทั้งหมดกี่คู่ อะไรบ้าง
 
-3. ให้แสดงข้อความ 'This book is Building a Second Brain by Tiago Forte' 
+[แก้] 3. ให้แสดงข้อความ 'This book is Building a Second Brain by Tiago Forte' [ต้องเห็นอันนี้บนหน้าจอ]
 ด้วยการเข้าถึงข้อมูลใน object และนำมาแสดงผลด้วย String Template Literal
 
 4. ให้เพิ่ม key rating ไว้ระบุคะแนนนิยม โดยกำหนด value เป็น 3.5
 
-5. ให้แสดงข้อความ 'Building a Second Brain by Tiago Forte comes with 3.5 rating' 
+[แก้] 5. ให้แสดงข้อความ 'Building a Second Brain by Tiago Forte comes with 3.5 rating' [ต้องเห็นอันนี้บนหน้าจอ]
 ด้วยการเข้าถึงข้อมูลใน object และนำมาแสดงผลด้วย String Template Literal
 
-6. ให้ทำการเปลี่ยนค่าใน key rating จาก 3.5 เป็น 4.7 
-และแสดงข้อความ rating ใหม่อีกรอบ รอบนี้จะต้องเห็นข้อความ 'Building a Second Brain by Tiago Forte comes with 4.7 rating'
+[แก้] 6. ให้ทำการเปลี่ยนค่าใน key rating จาก 3.5 เป็น 4.7 
+และแสดงข้อความ rating ใหม่อีกรอบ รอบนี้จะต้องเห็นข้อความ 'Building a Second Brain by Tiago Forte comes with 4.7 rating' [ต้องเห็นอันนี้บนหน้าจอ]
 
-7. ให้ทำการลบข้อมูลจำนวนหน้าออกจาก bookInfo
-8. ให้ทำการ console.log object bookInfo อีกครั้ง ว่าเหลือ key-value pair ทั้งหมดกี่คู่ อะไรบ้าง
+[แก้] 7. ให้ทำการลบข้อมูลจำนวนหน้าออกจาก bookInfo
+[แก้] 8. ให้ทำการ console.log object bookInfo อีกครั้ง ว่าเหลือ key-value pair ทั้งหมดกี่คู่ อะไรบ้าง
 */
 let bookInfo = {
   title: "Building a Second Brain",
