@@ -10,14 +10,26 @@
 10. ให้ console.log เพื่อแสดงจำนวนสมาชิกใน array นี้ ว่ามีสมาชิกทั้งหมดกี่ตัว
 */
 
-const fruits = ["orange", "apple"];
+const fruits = [];
 
-fruits[0] = "avocado";
+// fruits[0] = "apple";
+fruits.push("apple");
+console.log(fruits);
 
 fruits.push("banana");
-// fruits.unshift("orange");
-fruits.unshift("peach");
-fruits.pop();
-fruits.shift();
-
 console.log(fruits);
+
+fruits.unshift("orange");
+console.log(fruits);
+
+fruits.unshift("peach");
+console.log(fruits);
+
+fruits.pop();
+console.log(fruits);
+
+fruits.shift();
+console.log(fruits);
+
+fruits[0] = "avocado";
+console.log(fruits); // มีสมาชิกทั้งหมด 2 ตัว คือ [ 'avocado', 'apple' ]

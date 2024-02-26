@@ -43,12 +43,6 @@ const employees = [
   },
 ];
 
-employees[0].jobInfo.title = "Senior Developer";
-
-employees[0].jobInfo.salary = 60000;
-
-delete employees[1].jobInfo.bonus;
-
 console.log(`${employees[0].name} age ${employees[0].age}`);
 
 console.log(`${employees[1].name} age ${employees[1].age}`);
@@ -59,12 +53,18 @@ console.log(
 
 console.log(`${employees[0].name} works as a ${employees[0].jobInfo.title}`);
 
+employees[0].jobInfo.title = "Senior Developer";
+
+employees[0].jobInfo.salary = 60000;
+
 console.log(
   `${employees[0].name} works as a ${employees[0].jobInfo.title}, He earns ${employees[0].jobInfo.salary} thb/month.`
 );
 
+delete employees[1].jobInfo.bonus;
+
 console.log(employees[1]);
 
 console.log(
-  `${employees[1].name} bonus is ${employees[1].jobInfo.bonus} please help her because she's cute.`
+  `${employees[1].name}'s bonus is ${employees[1].jobInfo.bonus} please help her because she's cute.`
 );

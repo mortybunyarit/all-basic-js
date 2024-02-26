@@ -23,11 +23,18 @@
 let bookInfo = {
   title: "Building a Second Brain",
   author: "Tiago Forte",
-  //   numberOfPage: 315,
-  rating: 4.7,
+  numberOfPage: 315,
 };
 
-console.log(bookInfo); //มี key-value pair ทั้งหมดมี3คู่ title: 'Building a Second Brain',// author: 'Tiago Forte',// numberOfPage: 315
+console.log(bookInfo); //key-value pair ทั้งหมดมี 3 คู่ title: 'Building a Second Brain',// author: 'Tiago Forte',// numberOfPage: 315
+console.log(`This book is ${bookInfo.title} by ${bookInfo.author}`);
+bookInfo.rating = 3.5;
 console.log(
-  `This book is ${bookInfo.title} by ${bookInfo.author} come with ${bookInfo.rating} rating`
+  `${bookInfo.title} by ${bookInfo.author} comes with ${bookInfo.rating} rating`
 );
+bookInfo.rating = 4.7;
+console.log(
+  `${bookInfo.title} by ${bookInfo.author} comes with ${bookInfo.rating} rating`
+);
+delete bookInfo.numberOfPage;
+console.log(bookInfo); //key-value pair ทั้งหมดมี 3 คู่  title: 'Building a Second Brain',// author: 'Tiago Forte',// rating: 4.7
