@@ -19,3 +19,25 @@ Object calculator จะมี
 ให้กำหนด Parameter firstNumber เป็น 3000 และ secondNumber เป็น 1000
 ให้แสดงค่าของ subtractResult ออกมาดูทางหน้าจอด้วย console.log ถ้าถูกต้องจะเห็น 2000
 */
+
+let calculator = {
+  addTwoNumber: function addTwoNumber(firstNumber, secondNumber) {
+    console.log(firstNumber + secondNumber);
+    return;
+  },
+  subtractTwoNumber: function subtractTwoNumber(firstNumber, secondNumber) {
+    console.log(firstNumber - secondNumber);
+    return;
+  },
+};
+
+calculator.addTwoNumber(10, 5);
+calculator.subtractTwoNumber(10, 5);
+
+let addResult = calculator.addTwoNumber;
+calculator.addTwoNumber(10, 20);
+console.log(addResult);
+
+let subtractResult = calculator.subtractTwoNumber;
+calculator.subtractTwoNumber(3000, 1000);
+console.log(subtractResult);

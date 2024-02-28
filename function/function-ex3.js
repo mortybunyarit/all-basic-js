@@ -4,6 +4,17 @@ function นี้รับ argument 2 ตัวคือ username กับ pas
 ถ้า user พิมพ์ username หรือ password ผิด จะเห็นข้อความ 'Wrong username or password, please try again.' 
 */
 
-const correctUsername = 'Morty';
-const correctPassword = '123456789';
+const correctUsername = "Morty";
+const correctPassword = "123456789";
 
+function isValidLogin(username, password) {
+  if (username === correctUsername && password === correctPassword) {
+    console.log("Login successfully.");
+  } else {
+    console.log("Wrong username or password, please try again.");
+  }
+}
+
+isValidLogin("Morty", "123456789");
+isValidLogin("Marty", "123456789");
+isValidLogin("Morty", "555555");
