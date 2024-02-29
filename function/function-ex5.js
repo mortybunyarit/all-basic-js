@@ -10,6 +10,8 @@
 //     return firstNumber + secondNumber;
 // }
 
+// แก้ตรง return ให้ return ค่าออกมา ไม่ควรใช้ console.log แสดงค่าใน function
+
 let addTwoNumber = function (firstNumber, secondNumber) {
   console.log(firstNumber + secondNumber);
 };

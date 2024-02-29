@@ -20,6 +20,7 @@ Object calculator จะมี
 ให้แสดงค่าของ subtractResult ออกมาดูทางหน้าจอด้วย console.log ถ้าถูกต้องจะเห็น 2000
 */
 
+// แก้ตรง return ให้ return ค่าออกมา ไม่ควรใช้ console.log แสดงค่าใน function
 let calculator = {
   addTwoNumber: function addTwoNumber(firstNumber, secondNumber) {
     console.log(firstNumber + secondNumber);

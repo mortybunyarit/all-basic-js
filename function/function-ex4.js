@@ -5,6 +5,8 @@
 ถ้า user พิมพ์ password ผิด จะเห็นข้อความ 'Wrong password, please try again.'
 */
 
+// แก้ตรง return ให้ return ค่าออกมา ไม่ควรใช้ console.log แสดงค่าใน function
+
 const correctUsername = "Morty";
 const correctPassword = "123456789";
 

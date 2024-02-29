@@ -3,6 +3,8 @@
 ฟังก์ชันนี้จะ Return ผลลัพธ์ออกมาเป็น ผลรวมของ firstNumber และ secondNumber
 ถ้า Execute addTwoNumber(10, 5) จะได้ผลลัพธ์ออกมาเป็น 15
 */
+
+// แก้ตรง return ให้ return ค่าออกมา ไม่ควรใช้ console.log แสดงค่าใน function
 function addTwoNumber(firstNumber, secondNumber) {
   console.log(firstNumber + secondNumber);
   return;
