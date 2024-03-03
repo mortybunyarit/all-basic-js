@@ -14,3 +14,7 @@ const student = {
   grade: "A",
   subject: "Math",
 };
+
+for (let key in student) {
+  console.log(" Value for key " + key + " is " + student[key] + ".");
+}

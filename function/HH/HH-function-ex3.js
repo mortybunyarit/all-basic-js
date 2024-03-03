@@ -2,8 +2,7 @@
 
 // แก้ตรง return ให้ return ค่าออกมา ไม่ควรใช้ console.log แสดงค่าใน function
 let addNumber = (firstNumber, secondNumber) => {
-  console.log(firstNumber + secondNumber);
-  return;
+  return firstNumber + secondNumber;
 };
 
-addNumber(10, 5);
+console.log(addNumber(10, 5));

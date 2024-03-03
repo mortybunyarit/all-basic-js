@@ -23,22 +23,18 @@ Object calculator จะมี
 // แก้ตรง return ให้ return ค่าออกมา ไม่ควรใช้ console.log แสดงค่าใน function
 let calculator = {
   addTwoNumber: function addTwoNumber(firstNumber, secondNumber) {
-    console.log(firstNumber + secondNumber);
-    return;
+    return firstNumber + secondNumber;
   },
   subtractTwoNumber: function subtractTwoNumber(firstNumber, secondNumber) {
-    console.log(firstNumber - secondNumber);
-    return;
+    return firstNumber - secondNumber;
   },
 };
 
-calculator.addTwoNumber(10, 5);
-calculator.subtractTwoNumber(10, 5);
+console.log(calculator.addTwoNumber(10, 5));
+console.log(calculator.subtractTwoNumber(10, 5));
 
 let addResult = calculator.addTwoNumber;
-calculator.addTwoNumber(10, 20);
-console.log(addResult);
+console.log(calculator.addTwoNumber(10, 20));
 
 let subtractResult = calculator.subtractTwoNumber;
-calculator.subtractTwoNumber(3000, 1000);
-console.log(subtractResult);
+console.log(calculator.subtractTwoNumber(3000, 1000));

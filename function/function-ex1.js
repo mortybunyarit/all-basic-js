@@ -3,10 +3,9 @@
 */
 
 // แก้ตรง return ให้ return ค่าออกมา ไม่ควรใช้ console.log แสดงค่าใน function
-// แก้ให้ function นี้ ไม่มี parameter และ argument 
+// แก้ให้ function นี้ ไม่มี parameter และ argument
 
-let greetingMessage = function (sentence) {
-  console.log(sentence);
-  return;
+let greetingMessage = function () {
+  return "'สวัสดี ยินดีต้อนรับเข้าสู่เว็บไซต์'";
 };
-greetingMessage("'สวัสดี ยินดีต้อนรับเข้าสู่เว็บไซต์'");
+console.log(greetingMessage());

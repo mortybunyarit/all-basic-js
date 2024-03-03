@@ -6,7 +6,6 @@
 
 // แก้ตรง return ให้ return ค่าออกมา ไม่ควรใช้ console.log แสดงค่าใน function
 function addTwoNumber(firstNumber, secondNumber) {
-  console.log(firstNumber + secondNumber);
-  return;
+  return firstNumber + secondNumber;
 }
-addTwoNumber(10, 5);
+console.log(addTwoNumber(10, 5));

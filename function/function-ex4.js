@@ -12,14 +12,14 @@ const correctPassword = "123456789";
 
 let isValidLogin = (username, password) => {
   if (username === correctUsername && password === correctPassword) {
-    console.log("Login successfully.");
+    return "Login successfully.";
   } else if (username !== correctUsername) {
-    console.log("Wrong username, please try again.");
+    return "Wrong username, please try again.";
   } else if (password !== correctPassword) {
-    console.log("Wrong password, please try again.");
+    return "Wrong password, please try again.";
   }
 };
 
-isValidLogin("Morty", "123456789");
-isValidLogin("mary", "123456789");
-isValidLogin("Morty", "55555");
+console.log(isValidLogin("Morty", "123456789"));
+console.log(isValidLogin("mary", "123456789"));
+console.log(isValidLogin("Morty", "55555"));

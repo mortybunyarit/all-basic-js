@@ -10,12 +10,12 @@ const correctPassword = "123456789";
 
 function isValidLogin(username, password) {
   if (username === correctUsername && password === correctPassword) {
-    console.log("Login successfully.");
+    return "Login successfully.";
   } else {
-    console.log("Wrong username or password, please try again.");
+    return "Wrong username or password, please try again.";
   }
 }
 
-isValidLogin("Morty", "123456789");
-isValidLogin("Marty", "123456789");
-isValidLogin("Morty", "555555");
+console.log(isValidLogin("Morty", "123456789"));
+console.log(isValidLogin("Marty", "123456789"));
+console.log(isValidLogin("Morty", "555555"));

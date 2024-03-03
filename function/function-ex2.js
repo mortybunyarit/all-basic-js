@@ -7,11 +7,11 @@ function นี้รับ argument 1 ตัวคือ username
 
 function greeting(username) {
   if (username === "Morty") {
-    console.log("สวัสดี Morty! ยินดีต้อนรับเข้าสู่เว็บไซต์");
+    return "สวัสดี Morty! ยินดีต้อนรับเข้าสู่เว็บไซต์";
   } else if (username !== "Morty") {
-    console.log("สวัสดีคนที่เราไม่รู้ว่าใคร แต่ยังไงก็ยินดีต้อนรับนะ");
+    return "สวัสดีคนที่เราไม่รู้ว่าใคร แต่ยังไงก็ยินดีต้อนรับนะ";
   }
 }
 
-greeting("Morty");
-greeting("Milly");
+console.log(greeting("Morty"));
+console.log(greeting("Milly"));

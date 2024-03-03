@@ -12,6 +12,9 @@ const petInfo = {
   name: "น้องอ๋องแปด",
   age: 5,
   breed: "ชิสุ",
-  identity: "น่ารักที่สุดในโลก",
+  identity: "น่ารักที่สุดในโลก555",
 };
 
+for (let key in petInfo) {
+  console.log(`key ${key} มีค่าเท่ากับ ${petInfo[key]}`);
+}

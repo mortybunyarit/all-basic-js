@@ -8,7 +8,6 @@
 
 // แก้ตรง return ให้ return ค่าออกมา ไม่ควรใช้ console.log แสดงค่าใน function
 
-let addTwoNumber = (firstNumber, secondNumber) =>
-  console.log(firstNumber + secondNumber);
+let addTwoNumber = (firstNumber, secondNumber) => firstNumber + secondNumber;
 
-addTwoNumber(1, 1);
+console.log(addTwoNumber(1, 1));
