@@ -18,10 +18,10 @@ const guesses = [
   "Thomas",
 ];
 
-for (let i = 0; i <= 12; i++) {
-  console.log(`Hello ${guesses[i]}! welcome to my birthday party.`);
-}
-
-// //for (let i = 0; i < guesses.length; i++) {
-//   console.log(`Hello ${guesses[i]} welcome to my birthday party.`);
+// for (let i = 0; i <= 12; i++) {
+//   console.log(`Hello ${guesses[i]}! welcome to my birthday party.`);
 // }
+
+for (let i = 0; i < guesses.length; i++) {
+  console.log(`Hello ${guesses[i]} welcome to my birthday party.`);
+}
