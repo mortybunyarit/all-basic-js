@@ -30,10 +30,11 @@ let endNumber = 3;
 // เขียน function ที่นี่ได้เลยจ้า
 function multiplicationTable(startNumber, endNumber) {
   for (let i = startNumber; i <= endNumber; i++) {
-    console.log(`${i}`);
+    console.log(`แม่สูตรคูณของ ${i}`);
     for (let j = 1; j <= 12; j++) {
       console.log(`${i} X ${j} = ${i * j}`);
     }
+    console.log(`---------------`);
   }
 }
 

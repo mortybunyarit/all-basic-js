@@ -52,5 +52,15 @@ const employees = [
 ];
 
 // เขียน function ที่นี่ได้เลยจ้า
+let getPromote = (array) => {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].position === "Programmer") {
+      array[i].promote = "yes";
+    } else {
+      array[i].promote = "no";
+    }
+  }
+  return array;
+};
 
-getPromote(employees);
+console.log(getPromote(employees));

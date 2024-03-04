@@ -9,10 +9,30 @@
 */
 
 // เขียน function ที่นี่ได้เลยจ้า
+let findMinNumber = (array) => {
+  let min = array[0];
 
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < min) {
+      min = array[i];
+    }
+  }
+  return min;
+};
 
-console.log(findMinNumber([ 5, 7, 8, 9, 10, 1 ])); // 1
-console.log(findMinNumber([ 200, 300, 400, 900, 1100 ])); // 200
+let findMaxNumber = (array) => {
+  let max = array[0];
 
-console.log(findMaxNumber([ 7, 3, -4, -10 ])); // 7
-console.log(findMaxNumber([ -18, -16, -14, -10, 0 ])); // 0
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > max) {
+      max = array[i];
+    }
+  }
+  return max;
+};
+
+console.log(findMinNumber([5, 7, 8, 9, 10, 1])); // 1
+console.log(findMinNumber([200, 300, 400, 900, 1100])); // 200
+
+console.log(findMaxNumber([7, 3, -4, -10])); // 7
+console.log(findMaxNumber([-18, -16, -14, -10, 0])); // 0
