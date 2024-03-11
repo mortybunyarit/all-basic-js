@@ -32,3 +32,10 @@ const studentInfo = [
     subject: { math: "B", science: "B", art: "A+" },
   },
 ];
+
+for (let student of studentInfo) {
+  console.log(student.name);
+  console.log(`math grade = ${student.subject.math}`);
+  console.log(`science grade = ${student.subject.science}`);
+  console.log(`art grade = ${student.subject.art}`);
+}

@@ -22,6 +22,7 @@ const beverageData = [
 ];
 
 // เขียน function ตรงนี้ได้เลย
+let test = beverageData[0].amount * beverageData[0].price;
 let findTopSaleMenu = (array) => {
   let top = array[0];
 

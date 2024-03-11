@@ -18,3 +18,13 @@ const guesses = [
   "Rose",
   "Thomas",
 ];
+
+let greetGuest = (array) => {
+  // let guestName = 0;
+  for (let i = 0; i < array.length; i++) {
+    let guestName = array[i];
+    console.log(`Hello ${guestName}! Welcome to my birthday party.`);
+  }
+};
+// console.log(greetGuest(guesses));
+greetGuest(guesses);

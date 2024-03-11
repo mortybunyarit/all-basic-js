@@ -26,3 +26,10 @@ const studentInfo = [
     subject: { math: "B", science: "B", art: "A+" },
   },
 ];
+
+for (let i = 0; i < studentInfo.length; i++) {
+  const student = studentInfo[i];
+
+  console.log(`key name มีค่าเท่ากับ ${student.name}`);
+  console.log(`key name มีค่าเท่ากับ ${student.age}`);
+}
