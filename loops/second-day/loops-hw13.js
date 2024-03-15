@@ -63,3 +63,26 @@ let updatePosition = (array) => {
 
 console.log(getPromote(employees));
 console.log(updatePosition(employees));
+
+// let getPromote = (array) => {
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i].position === "Programmer") {
+//       array[i].promote = "yes";
+//     } else {
+//       array[i].promote = "no";
+//     }
+//   }
+//   return array;
+// };
+
+// let updatePosition = (array) => {
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i].promote === "yes" && array[i].position === "Programmer") {
+//       array[i].position = "Senior Developer";
+//     }
+//   }
+//   return array;
+// };
+
+// console.log(getPromote(employees));
+// console.log(updatePosition(employees));

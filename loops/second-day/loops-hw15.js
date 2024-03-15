@@ -47,3 +47,30 @@ let findMinSalesMenu = (array) => {
 
 console.log(findTopSaleMenu(beverageData));
 console.log(findMinSalesMenu(beverageData));
+
+// // เขียน function ตรงนี้ได้เลย
+// let test = beverageData[0].amount * beverageData[0].price;
+// let findTopSaleMenu = (array) => {
+//   let top = array[0];
+
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i].amount > top.amount) {
+//       top = array[i];
+//     }
+//   }
+//   return `${top.name} is the most popular menu. We sold ${top.amount} cups of it. `;
+// };
+
+// let findMinSalesMenu = (array) => {
+//   let min = array[0];
+
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i].amount < min.amount) {
+//       min = array[i];
+//     }
+//   }
+//   return `${min.name} is the least popular menu item. We sold ${min.amount} cups of it. `;
+// };
+
+// console.log(findTopSaleMenu(beverageData));
+// console.log(findMinSalesMenu(beverageData));

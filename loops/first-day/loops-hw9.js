@@ -11,17 +11,29 @@ const firstArray = [2, 4, 6, 8, 10];
 const secondArray = [12, 22, 32, 42, 52, 62, 72];
 
 // เขียน function ที่นี่ได้เลยจ้า
+// let findAvg = (array) => {
+//   let sum = 0;
+
+//   for (let i = 0; i < array.length; i++) {
+//     sum += array[i];
+//   }
+
+//   let average = sum / array.length;
+
+//   return average;
+// };
+
+// console.log(findAvg(firstArray)); // 6
+// console.log(findAvg(secondArray)); // 42
+
 let findAvg = (array) => {
   let sum = 0;
-
   for (let i = 0; i < array.length; i++) {
     sum += array[i];
   }
+  let avg = sum / array.length;
 
-  let average = sum / array.length;
-
-  return average;
+  return avg;
 };
-
-console.log(findAvg(firstArray)); // 6
-console.log(findAvg(secondArray)); // 42
+console.log(findAvg(firstArray));
+console.log(findAvg(secondArray));

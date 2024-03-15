@@ -24,3 +24,13 @@ for (let key in studentInfo) {
     console.log(`key ${key} มีค่าเท่ากับ ${studentInfo[key]} `);
   }
 }
+
+// for (let key in studentInfo) {
+//   if (typeof studentInfo[key] === "object") {
+//     for (let subKey in studentInfo[key]) {
+//       console.log(`key ${subKey} มีค่าเท่ากับ ${studentInfo[key][subKey]}`);
+//     }
+//   } else {
+//     console.log(`key ${key} มีค่าเท่ากับ ${studentInfo[key]} `);
+//   }
+// }

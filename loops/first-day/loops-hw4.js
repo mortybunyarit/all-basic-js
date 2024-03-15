@@ -26,5 +26,9 @@ const foods = [
 ];
 
 for (let name of foods) {
-  console.log(`My favorite food is : ${name}`);
+  console.log(`My favorite food is : ${name}.`);
 }
+
+// for (let name of foods) {
+//   console.log(`My favorite food is : ${name}`);
+// }

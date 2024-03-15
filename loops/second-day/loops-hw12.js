@@ -63,4 +63,17 @@ let getPromote = (array) => {
   return array;
 };
 
-console.log(getPromote(employees));
+// console.log(getPromote(employees));
+
+// let getPromote = (array) => {
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i].position === "Programmer") {
+//       array[i].promote = "yes";
+//     } else {
+//       array[i].promote = "no";
+//     }
+//   }
+//   return array;
+// };
+
+// console.log(getPromote(employees));

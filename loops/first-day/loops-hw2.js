@@ -19,5 +19,9 @@ const guesses = [
 ];
 
 for (let name of guesses) {
-  console.log("Hello" + " " + name + "! Welcome to my birthday party ");
+  console.log(`Hello ${name}! Welcome to my birthday party.`);
 }
+
+// for (let name of guesses) {
+//   console.log("Hello" + " " + name + "! Welcome to my birthday party ");
+// }

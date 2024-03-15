@@ -18,3 +18,7 @@ const petInfo = {
 for (let key in petInfo) {
   console.log(`key ${key} มีค่าเท่ากับ ${petInfo[key]}`);
 }
+
+// for (let key in petInfo) {
+//   console.log(`key ${key} มีค่าเท่ากับ ${petInfo[key]}`);
+// }

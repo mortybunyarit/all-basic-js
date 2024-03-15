@@ -33,3 +33,11 @@ let foodName = () => {
 };
 
 foodName();
+
+// let foodName = () => {
+//   for (let name of foods) {
+//     console.log(`My favorite food is:${name}.`);
+//   }
+// };
+
+// foodName();

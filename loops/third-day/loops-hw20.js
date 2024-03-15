@@ -39,3 +39,10 @@ for (let student of studentInfo) {
   console.log(`science grade = ${student.subject.science}`);
   console.log(`art grade = ${student.subject.art}`);
 }
+
+// for (let student of studentInfo) {
+//   console.log(student.name);
+//   console.log(`math grade = ${student.subject.math}`);
+//   console.log(`science grade = ${student.subject.science}`);
+//   console.log(`art grade = ${student.subject.art}`);
+// }
