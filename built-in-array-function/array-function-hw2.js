@@ -5,7 +5,41 @@
 สรุปง่ายๆ คือ ตัวอักษรที่พิมพ์เข้ามาจะเป็นพิมพ์ใหญ่หรือพิมพ์เล็ก ถ้าเป็นคำเดียวกันให้นับเป็นชื่อเดียวกันนั่นเอง
 */
 
-const arrayOfUsername = ['aliza', 'Paul187z', 'Biliblliboom', 'Omega-13579']; 
-let username1 = 'aliza'; // เมื่อ execute function จะเห็นข้อความ 'The username is not valid because it has already been used.'
-let username2 = 'paul'; // เมื่อ execute function จะเห็นข้อความ 'You can use this username.'
-let username3 = 'omega-13579'; // เมื่อ execute function จะเห็นข้อความ 'The username is not valid because it has already been used.'
+// const arrayOfUsername = ["aliza", "Paul187z", "Biliblliboom", "Omega-13579"];
+// let username1 = "aliza"; // เมื่อ execute function จะเห็นข้อความ 'The username is not valid because it has already been used.'
+// let username2 = "paul"; // เมื่อ execute function จะเห็นข้อความ 'You can use this username.'
+// let username3 = "omega-13579"; // เมื่อ execute function จะเห็นข้อความ 'The username is not valid because it has already been used.'
+
+// let applyWebsiteMember = (arrayOfUsername, username) => {
+//   if (arrayOfUsername.includes(username.toLowerCase())) {
+//     return "The username is not valid because it has already been used.";
+//   } else {
+//     return "You can use this username.";
+//   }
+// };
+
+// console.log(applyWebsiteMember(arrayOfUsername, username1));
+// console.log(applyWebsiteMember(arrayOfUsername, username2));
+// console.log(applyWebsiteMember(arrayOfUsername, username3));
+
+const arrayOfUsername = ["aliza", "Paul187z", "Biliblliboom", "Omega-13579"];
+let username1 = "aliza"; // เมื่อ execute function จะเห็นข้อความ 'The username is not valid because it has already been used.'
+let username2 = "paul"; // เมื่อ execute function จะเห็นข้อความ 'You can use this username.'
+let username3 = "omega-13579"; // เมื่อ execute function จะเห็นข้อความ 'The username is not valid because it has already been used.'
+
+let applyWebsiteMember = (arrayOfUsername, username) => {
+  // ตรวจสอบว่า username ที่ต้องการสมัครสมาชิกมีใน arrayOfUsername หรือไม่
+  const isExistingUsername = arrayOfUsername.some(
+    (existingUsername) => existingUsername.toLowerCase() === username
+  );
+
+  if (isExistingUsername) {
+    return "The username is not valid because it has already been used.";
+  } else {
+    return "You can use this username.";
+  }
+};
+
+console.log(applyWebsiteMember(arrayOfUsername, username1));
+console.log(applyWebsiteMember(arrayOfUsername, username2));
+console.log(applyWebsiteMember(arrayOfUsername, username3));

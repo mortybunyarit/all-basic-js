@@ -10,8 +10,30 @@ function นี้จะรับ parameter 2 ตัวคือ
 function นี้จะทำงานโดยใช้ built-in array function ที่ชื่อว่า .includes() เข้ามาช่วย
 */
 
-const arrayOfUsername = ['aliza', 'Paul187z', 'Biliblliboom', 'Omega-13579']; 
-let username1 = 'aliza'; // เมื่อ execute function จะเห็นข้อความ 'The username is not valid because it has already been used.'
-let username2 = 'paul'; // เมื่อ execute function จะเห็นข้อความ 'You can use this username.'
-let username3 = 'omega-13579'; // เมื่อ execute function จะเห็นข้อความ 'You can use this username.'
+const arrayOfUsername = ["aliza", "Paul187z", "Biliblliboom", "Omega-13579"];
+let username1 = "aliza"; // เมื่อ execute function จะเห็นข้อความ 'The username is not valid because it has already been used.'
+let username2 = "paul"; // เมื่อ execute function จะเห็นข้อความ 'You can use this username.'
+let username3 = "omega-13579"; // เมื่อ execute function จะเห็นข้อความ 'You can use this username.'
 
+// let applyWebsiteMember = (arrayOfUsername, username) => {
+//   if (username === arrayOfUsername) {
+//     return "The username is not valid because it has already been used";
+//   } else {
+//     return "You can use this username.";
+//   }
+// };
+// console.log(applyWebsiteMember.includes(arrayOfUsername, username1));
+// console.log(applyWebsiteMember(arrayOfUsername, username2));
+// console.log(applyWebsiteMember(arrayOfUsername, username3));
+
+let applyWebsiteMember = (arrayOfUsername, username) => {
+  if (arrayOfUsername.includes(username)) {
+    return "The username is not valid because it has already been used.";
+  } else {
+    return "You can use this username.";
+  }
+};
+
+console.log(applyWebsiteMember(arrayOfUsername, username1));
+console.log(applyWebsiteMember(arrayOfUsername, username2));
+console.log(applyWebsiteMember(arrayOfUsername, username3));
