@@ -15,9 +15,51 @@ To Kill a Mockingbird is 199 thb.
 */
 
 let books = [
-    { title: "The Great Gatsby", author: "F. Scott Fitzgerald", pages: 180 },
-    { title: "To Kill a Mockingbird", author: "Harper Lee", pages: 281 },
-    { title: "1984", author: "George Orwell", pages: 328 },
-    { title: "Animal Farm", author: "George Orwell", pages: 144 },
-    { title: "Pride and Prejudice", author: "Jane Austen", pages: 279 },
-  ];
+  { title: "The Great Gatsby", author: "F. Scott Fitzgerald", pages: 180 },
+  { title: "To Kill a Mockingbird", author: "Harper Lee", pages: 281 },
+  { title: "1984", author: "George Orwell", pages: 328 },
+  { title: "Animal Farm", author: "George Orwell", pages: 144 },
+  { title: "Pride and Prejudice", author: "Jane Austen", pages: 279 },
+];
+
+//ใช้ forEach() เพื่อการวนลูปผ่านสมาชิกในอาร์เรย์หรือคอลเลกชันอื่นๆ แล้วนำมาประมวลผลตามที่กำหนด
+
+// Function to show book info
+let showBookInfo = () => {
+  books.forEach((book) => {
+    console.log(`${book.title} by ${book.author}`);
+  });
+};
+
+// Function to add book price
+let addBookInfo = () => {
+  books.forEach((book) => {
+    book.price = 199;
+  });
+};
+
+// Function to show book price
+let showBookPrice = () => {
+  books.forEach((book) => {
+    console.log(`${book.title} is ${book.price} thb.`);
+  });
+};
+
+// Call the functions
+showBookInfo();
+addBookInfo();
+showBookPrice();
+
+// let books = [
+//   { title: "The Great Gatsby", author: "F. Scott Fitzgerald", pages: 180 },
+//   { title: "To Kill a Mockingbird", author: "Harper Lee", pages: 281 },
+//   { title: "1984", author: "George Orwell", pages: 328 },
+//   { title: "Animal Farm", author: "George Orwell", pages: 144 },
+//   { title: "Pride and Prejudice", author: "Jane Austen", pages: 279 },
+// ];
+
+// let showBookInfo = () => {};
+
+// let addBookInfo = () => {};
+
+// let showBookPrice = () => {};

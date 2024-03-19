@@ -30,6 +30,7 @@ let username3 = "omega-13579"; // เมื่อ execute function จะเห�
 let applyWebsiteMember = (arrayOfUsername, username) => {
   // ตรวจสอบว่า username ที่ต้องการสมัครสมาชิกมีใน arrayOfUsername หรือไม่
   const isExistingUsername = arrayOfUsername.some(
+    //ตรวจสอบสมาชิกใน arrayที่ผ่านเงื่อนไขที่กำหนด
     (existingUsername) => existingUsername.toLowerCase() === username
   );
 

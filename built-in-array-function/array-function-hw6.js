@@ -28,8 +28,20 @@ const foods = [
   "Chicken Wings",
 ];
 
-let chooseMenu = (array, begin, end) => {};
+let chooseMenu = (array, begin, end) => {
+  return array
+    .slice(begin - 1, end) // .slice(): ใช้ในการสร้างอาร์เรย์ใหม่โดยส่วนของอาร์เรย์ที่ต้องการ โดยไม่เปลี่ยนแปลงอาร์เรย์เดิมโดยเลือกส่วนระหว่าง index ที่ 0 เพราะเราใช้ -1 จนถึงตัวสุดท้ายที่เราเลือกครับ
+    .map((item) => `${index + begin}. ${item}`); // .map()คือการเปลี่ยนค่าทั้งหมดใน array และ ให้ index แทนด้วย begin ที่เพิ่มขึ้นมาหนึ่ง และตามด้วยชื่อ item
+};
 
-console.log(chooseMenu(foods, 1, 4)); // [ 'Steak', 'Burger', 'Pizza', 'Sushi' ]
-console.log(chooseMenu(foods, 2, 4)); // [ 'Burger', 'Pizza', 'Sushi' ]
-console.log(chooseMenu(foods, 3, 4)); // [ 'Pizza', 'Sushi' ]
+console.log(chooseMenu(foods, 1, 4)); // [ '1. Steak', '2. Burger', '3. Pizza', '4. Sushi' ]
+console.log(chooseMenu(foods, 2, 4)); // [ '1. Burger', '2. Pizza', '3. Sushi' ]
+console.log(chooseMenu(foods, 3, 4)); // [ '1. Pizza', '2. Sushi' ]
+
+// let chooseMenu = (array, begin, end) => {
+//   return array.slice(begin - 1, end).map((item, index) => `${index + begin}. ${item}`);
+// };
+
+// console.log(chooseMenu(foods, 1, 4)); // [ '1. Steak', '2. Burger', '3. Pizza', '4. Sushi' ]
+// console.log(chooseMenu(foods, 2, 4)); // [ '1. Burger', '2. Pizza', '3. Sushi' ]
+// console.log(chooseMenu(foods, 3, 4)); // [ '1. Pizza', '2. Sushi' ]
