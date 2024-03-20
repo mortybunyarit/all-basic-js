@@ -14,7 +14,24 @@
   'Smoothie'
 ]
 */
+// ให้ลองคิดว่าต้องใส่ parameter อะไรบ้างเพื่อให้ function ทำงานได้ตาม requirement
+
+// ข้อนี้ต้องใช้ .splice(): ใช้ในการเปลี่ยนแปลงเนื้อหาของอาร์เรย์โดยการลบหรือเพิ่มข้อมูล โดยสามารถระบุ
+// index   และจำนวนข้อมูลที่ต้องการลบและสามารถแทรกข้อมูลใหม่เข้าไปได้
 
 const beverages = ["Coffee", "Green Tea", "Espresso", "Lemonade", "Smoothie"];
 
-let addBeverage = () => {}; // ให้ลองคิดว่าต้องใส่ parameter อะไรบ้างเพื่อให้ function ทำงานได้ตาม requirement
+let addBeverage = (array, newBeverage, position) => {
+  array.splice(position, 0, newBeverage); //ตำแหน่ง,ลบ,เพิ่ม
+  return array;
+};
+
+console.log(addBeverage(beverages, "Hot Chocolate", 1));
+
+// const beverages = ["Coffee", "Green Tea", "Espresso", "Lemonade", "Smoothie"];
+
+// let addBeverage = (array) => {
+//   return array.splice(1, 0, "Hot Chocolate");
+// };
+
+// console.log(addBeverage(beverages));

@@ -27,7 +27,9 @@ const foods = [
   "Chicken Wings",
 ];
 
-let chooseMenu = (array, begin, end) => {};
+let chooseMenu = (array, begin, end) => {
+  return array.slice(begin, end); //.slice(): ใช้ในการสร้างอาร์เรย์ใหม่โดยส่วนของอาร์เรย์ที่ต้องการ โดยไม่เปลี่ยนแปลงอาร์เรย์เดิม
+};
 
 console.log(chooseMenu(foods, 0, 3)); // [ 'Steak', 'Burger', 'Pizza' ]
 console.log(chooseMenu(foods, 1, 3)); // [ 'Burger', 'Pizza' ]
