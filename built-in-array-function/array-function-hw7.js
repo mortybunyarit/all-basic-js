@@ -22,7 +22,7 @@
 const beverages = ["Coffee", "Green Tea", "Espresso", "Lemonade", "Smoothie"];
 
 let addBeverage = (array, newBeverage, position) => {
-  array.splice(position, 0, newBeverage); //ตำแหน่ง,ลบ,เพิ่ม
+  array.splice(position, 0, newBeverage); //ตำแหน่ง,ลบ,เพิ่มอะไร
   return array;
 };
 

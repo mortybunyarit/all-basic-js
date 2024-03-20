@@ -39,3 +39,67 @@ let books = [
   { title: "The Hobbit", author: "J.R.R. Tolkien", pages: 310 },
   { title: "The Lord of the Rings", author: "J.R.R. Tolkien", pages: 1178 },
 ];
+
+// 1. showBookInfo
+let showBookInfo = () => {
+  books.forEach((book) => {
+    console.log(
+      `${book.title} by ${book.author} consist of ${book.pages} pages`
+    );
+  });
+};
+
+// เรียกใช้งาน showBookInfo เพื่อแสดงข้อมูลหนังสือ
+showBookInfo();
+
+// 2. selectAuthor
+let selectAuthor = (books, authorName) => {
+  return books.filter((book) => book.author === authorName);
+};
+
+console.log(selectAuthor(books, "George Orwell")); // เลือกหนังสือของ George Orwell
+
+// 3. reviseSelectAuthor
+let reviseSelectAuthor = (authorName) => {
+  let authorBooks = books.filter((book) => book.author === authorName);
+  let message = `We have ${authorBooks.length} books by ${authorName} which are...`;
+  let bookTitles = authorBooks.map((book) => book.title).join("\n");
+  return `${message}\n${bookTitles}`;
+};
+
+// เรียกใช้งาน reviseSelectAuthor โดยใส่ชื่อผู้เขียนที่ต้องการค้นหา
+console.log(reviseSelectAuthor("George Orwell"));
+
+// 4. editPages
+let editPages = (books, bookTitle, newPages) => {
+  let bookToUpdate = books.find((book) => book.title === bookTitle);
+  if (bookToUpdate) {
+    let oldPages = bookToUpdate.pages;
+    bookToUpdate.pages = newPages;
+    return `${bookToUpdate.title} consist of ${oldPages} pages, now consist of ${newPages} pages`;
+  } else {
+    return `Book '${bookTitle}' not found.`;
+  }
+};
+
+// ทดสอบการใช้งาน
+
+console.log(editPages(books, "The Great Gatsby", 300)); // เปลี่ยนจำนวนหน้าของ The Great Gatsby
+
+// let showBookInfo = () => {
+//   books.forEach((books) => {
+//     console.log(`${books.title} by ${books.author} of ${books.pages}`);
+//   });
+// };
+
+// let selectAuthor = () => {
+//   console.log();
+// };
+
+// let reviseSelectAuthor = () => {
+//   console.log();
+// };
+
+// let editPages = () => {
+//   console.log();
+// };
